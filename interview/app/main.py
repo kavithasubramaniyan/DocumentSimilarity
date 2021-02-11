@@ -7,7 +7,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
 import logging
-from app.logic import fetch
+from logic import fetch
 
 
 logger=logging.getLogger(__name__)
