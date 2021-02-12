@@ -32,13 +32,13 @@ docker images
 ```
 docker run -p 127.0.0.1:8090:8080 latest_image_id
 ```
-##server response
-Response code 200-Successful
-Response code 422-Validation Error 
+##Server Response
+#Response code 200-Successful
+#Response code 422-Validation Error 
 
-#output display
-# Installation of powershell core for windows version
-![Document similarity score](Images/document_similarity_score.PNG "Screenshot of output of two document comparison")
+##Output 
+#Document similarity score
+![Document similarity score](images/document_similarity_score.PNG "Screenshot of output of two document comparison")
 
 ##command line utility to make POST request
 ```
