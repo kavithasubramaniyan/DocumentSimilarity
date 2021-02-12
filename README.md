@@ -1,4 +1,4 @@
-##To find the similarity between two texts
+## To find the similarity between two texts
 # Prerequisites
 1.Install docker from the below link:
 
