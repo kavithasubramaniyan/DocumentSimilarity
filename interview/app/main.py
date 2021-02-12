@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
 import logging
 from logic import fetch
+from pydantic import BaseModel
 
 
 logger=logging.getLogger(__name__)
@@ -25,16 +26,15 @@ app.add_middleware(
 )
 app.add_middleware(ProxyHeadersMiddleware)
 
+class Item(BaseModel):
+    document1: str
+    document2:str
+
 @app.on_event("startup")
 async def startup_event():
     logger.info('starting up.....')
-
+    
+ 
 @app.post("/document-similarity",tags=['Similarity_Score'])
-async def document_similarity(doc1:str,doc2:str):
-
-    return {"message": "Two documents are compared",
-            "doc1":doc1,
-            "doc2":doc2,
-            "Similarity score":fetch.compute_similarity(doc1,doc2)
-
-            }
+async def document_similarity(item: Item):
+               return {"Similarity score":fetch.compute_similarity(item.document1,item.document2)}
