@@ -1,9 +1,7 @@
-# DocumentSimilarity
-
 # Prerequisites
 1.Install docker from the below link:
 
-https://docs.docker.com/engine/install/
+https://docs.docker.com/desktop/
 
 
 # Source Repository
