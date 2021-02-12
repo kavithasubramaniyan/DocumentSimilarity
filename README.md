@@ -18,7 +18,7 @@ cd document-similarity
 ```
 
 ## Steps to run docker
-#Step1:command to create Docker Image
+# Step1:command to create Docker Image
 ```
 docker build -t kavithasubramaniyan/docs-sim-image:0.1 .
 ```
@@ -32,12 +32,12 @@ docker images
 ```
 docker run -p 127.0.0.1:8090:8080 latest_image_id
 ```
-##Server Response
-#Response code 200-Successful
-#Response code 422-Validation Error 
+## Server Response
+# Response code 200-Successful
+# Response code 422-Validation Error 
 
-##Output 
-#Document similarity score
+## Output 
+# Document similarity score
 ![Document similarity score](images/document_similarity_score.PNG "Screenshot of output of two document comparison")
 
 ##command line utility to make POST request
