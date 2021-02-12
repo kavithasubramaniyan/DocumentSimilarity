@@ -29,7 +29,7 @@ app.add_middleware(ProxyHeadersMiddleware)
 async def startup_event():
     logger.info('starting up.....')
 
-@app.post("/Document Similarity",tags=['Similarity_Score'])
+@app.post("/document-similarity",tags=['Similarity_Score'])
 async def document_similarity(doc1:str,doc2:str):
 
     return {"message": "Two documents are compared",
