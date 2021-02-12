@@ -39,7 +39,17 @@ curl -X POST "http://localhost:8090/document-similarity" -H  "accept: applicatio
 
 # Output 
 ## Document similarity score
-![Document similarity score](images/document_similarity_score.PNG "Screenshot of output of two document comparison")
+curl -X POST "http://localhost:8090/document-similarity" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"document1\":\"kavi archu\",\"document2\":\"Archu kav\"}" | jq
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+100    74  100    24  100    50   1885   3927 --:--:-- --:--:-- --:--:--  4166
+
+{
+
+  "Similarity score": 0.5
 
 
 
