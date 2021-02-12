@@ -7,7 +7,7 @@ WORKDIR /app
 COPY ./interview/app/ .
 COPY ./interview/run.py .
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["python","run.py"]
 
