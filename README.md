@@ -1,3 +1,4 @@
+##To find the similarity between two texts
 # Prerequisites
 1.Install docker from the below link:
 
@@ -30,18 +31,17 @@ docker images
 ```
 docker run -p 127.0.0.1:8090:8080 latest_image_id
 ```
-# Server Response
-## Response code 200-Successful
-## Response code 422-Validation Error 
-
-# Output 
-## Document similarity score
-![Document similarity score](images/document_similarity_score.PNG "Screenshot of output of two document comparison")
 
 ## command line utility to make POST request
 ```
 curl -X POST "http://localhost:8080/document-similarity" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"document1\":\"input_string1\",\"document2\":\"input_string2\"}"
 ```
+
+# Output 
+## Document similarity score
+![Document similarity score](images/document_similarity_score.PNG "Screenshot of output of two document comparison")
+
+
 
 
 
