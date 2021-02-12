@@ -34,7 +34,7 @@ docker run -p 127.0.0.1:8090:8080 latest_image_id
 
 ## command line utility to make POST request
 ```
-curl -X POST "http://localhost:8080/document-similarity" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"document1\":\"input_string1\",\"document2\":\"input_string2\"}"
+curl -X POST "http://localhost:8090/document-similarity" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"document1\":\"input_string1\",\"document2\":\"input_string2\"}"
 ```
 
 # Output 
